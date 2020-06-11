@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+</head>
+<body>
+<h1><%= title %></h1>
+<p>Welcome to <%= title %></p>
+<ul>
+    <img src="https://www.example.com/images/dinosaur.jpg">
+    <% for (var i = 0; i < d.length;i++){ %>
+        <li><%= d[i] %></li>
+    <% } %>
+    <% for (var i = 0; i < f.length;i++){ %>
+        <li><img src="../<%= f[i] %>" alt="error"></li>
+    <% } %>
+</ul>
+</body>
+</html>
